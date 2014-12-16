@@ -1,0 +1,72 @@
+﻿@model Firma.Models.Klient
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Klient</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Imie)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Imie)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nazwisko)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nazwisko)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Adres)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Adres)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.KodPocztowy)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KodPocztowy)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.NumerTelefonu)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumerTelefonu)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataUrodzenia)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataUrodzenia)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataRejestracji)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataRejestracji)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

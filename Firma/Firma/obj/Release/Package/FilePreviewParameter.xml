@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="firma" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\wwsi\\ASP\.NET\ MVC\\Firma\\Firma\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\wwsi\\ASP\.NET\ MVC\\Firma\\Firma\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:jxyqlgii0t.database.windows.net,1433;Initial Catalog=firmaA2yJdVX51KJ;User Id=tomaszsmyczynski@jxyqlgii0t;Password=Tomasz04" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\wwsi\\ASP\.NET\ MVC\\Firma\\Firma\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="FirmaContext-Web.config Connection String" description="" value="Data Source=tcp:jxyqlgii0t.database.windows.net,1433;Initial Catalog=firmaA2yJdVX51KJ;User Id=tomaszsmyczynski@jxyqlgii0t;Password=Tomasz04" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\wwsi\\ASP\.NET\ MVC\\Firma\\Firma\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FirmaContext']/@connectionString" />
+  </parameter>
+  <parameter name="Entities-Web.config Connection String" description="Entities Connection String used in web.config by the application to access the database." value="metadata=res://*/Models.KlientDataModel.csdl|res://*/Models.KlientDataModel.ssdl|res://*/Models.KlientDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(localdb)\v11.0;attachdbfilename=|DataDirectory|\FirmaContext-20141210140259.mdf;initial catalog=FirmaContext-20141210140259;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\wwsi\\ASP\.NET\ MVC\\Firma\\Firma\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Entities']/@connectionString" />
+  </parameter>
+</parameters>
